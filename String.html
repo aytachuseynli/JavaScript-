@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Javascript</title>
+    </head>
+    <body>
+    <!--Part1-->
+        <p id="result1"></p>
+        
+    <script>
+         printScreen1();
+        function printScreen1() {
+            var text="Lorem ipsum";
+            document.getElementById(`result1`).innerHTML="Text: " + text;
+        }        
+    </script>
+
+<!--Part2-->
+    <p id="result2"></p>
+    <script>
+        printScreen2();
+        function printScreen2() {
+            var text="Lorem ipsum";
+            document.getElementById(`result2`).innerHTML="Text length: " + text.length;
+        }
+    </script>
+
+<!--Part3-->
+<p id="result3"></p>
+<script>
+    printScreen3();
+    function printScreen3() {
+        var text="Lorem ipsum";
+        var x=new String(`Javascript`);
+        document.getElementById(`result3`).innerHTML="Type of x is: " + typeof x; 
+                   <!--type of x is object , but type of text is string-->
+    }
+</script>
+
+<!--Part4-->
+<p id="result4"></p>
+<script>
+    printScreen4();
+    function printScreen4() {
+        var text="Javascript";
+        var x=new String(`Javascript`);
+        document.getElementById(`result4`).innerHTML=(x==text);     
+        <!--yalniz deyere baxilir-->            
+    }
+</script>
+
+<!--Part5-->
+<p id="result5"></p>
+<script>
+    printScreen5();
+    function printScreen5() {
+        var text="Javascript";
+        var x=new String(`Javascript`);
+        document.getElementById(`result5`).innerHTML=(x===text);
+        <!Hem deyer, hem de tip eyni olduqda true olur-->                 
+    }
+</script>
+
+<!--Part6-->
+<p id="result6"></p>
+<script>
+    printScreen6();
+    function printScreen6() {
+        var text="Javascript Angular JS, React JS, Vue JS, Node JS";
+        document.getElementById(`result6`).innerHTML="Index Of text: " + text.indexOf("JS");
+                     
+    }
+</script>
+
+<!--Part7-->
+<p id="result7"></p>
+<script>
+    printScreen7();
+    function printScreen7() {
+        var text="Javascript Angular JS, React JS, Vue JS, Node JS";
+        document.getElementById(`result7`).innerHTML="Last Index Of text: " + text.lastIndexOf("JS");               
+    }
+    <!--Metn tapilmazsa, -1 cavabin verer-->
+</script>
+
+<!--Part8-->
+<p id="result8"></p>
+<script>
+    printScreen8();
+    function printScreen8() {
+        var text="Javascript Angular JS, React JS, Vue JS, Node JS";
+        document.getElementById(`result8`).innerHTML="start point Index Of text: " + text.indexOf("JS",21);                     
+    }
+</script>
+
+<!--Part9-->
+<p id="result9"></p>
+<script>
+    printScreen9();
+    function printScreen9() {
+        var text="Javascript Angular JS, React JS, Vue JS, Node JS";
+        document.getElementById(`result9`).innerHTML="Search: " + text.search("JS");                     
+    }
+</script>
+
+<!--Part10-->
+<p id="result10"></p>
+<script>
+    printScreen10();
+    function printScreen10() {
+        var text="Javascript Angular JS, React JS, Vue JS, Node JS";
+        document.getElementById(`result10`).innerHTML="Slice: " + text.slice(10,21); <!--(-8,-1)-->
+                     
+    }
+</script>
+
+<!--Part11-->
+<p id="result11"></p>
+<script>
+    printScreen11();
+    function printScreen11() {
+        var text="Javascript Angular JS, React JS, Vue JS, Node JS";
+        document.getElementById(`result11`).innerHTML="Substring: " + text.substring(10,15);                     
+    } <!--Slice menfi deyer alir, substring yox. End gosterilmezse metn sona qeder goturulur-->
+</script>
+
+<!--Part12-->
+<p id="result12"></p>
+<script>
+    printScreen12();
+    function printScreen12() {
+        var text="Javascript Angular JS, React JS, Vue JS, Node JS";
+        document.getElementById(`result12`).innerHTML="Substr: " + text.substr(10,6);  <!--(-10,6)-->                   
+    } 
+</script>
+
+<!--Part13-->
+<p id="result13"></p>
+<script>
+    printScreen13();
+    function printScreen13() {
+        var text="Javascript Angular JS, React JS, Vue JS, Node JS";
+        document.getElementById(`result13`).innerHTML="Replace: " + text.replace("Javascript", "changed");                   
+    } <!--Yalniz birincini deyisir, JS-lerin hamisini deyismek ucun /JS/g yazmaq lazimdi. Boyuk-kicik herf hessasligini  qaldirmaq ucun /jS/i yaza bilerik . Her ikisini tetbiq etmek ucun /jS/gi yaziriq-->
+</script>
+
+<!--Part14-->
+<p id="result14"></p>
+<script>
+    printScreen14();
+    function printScreen14() {
+        var text="Javascript Angular JS, React JS, Vue JS, Node JS";
+        document.getElementById(`result14`).innerHTML="UPPERRCASE: " + text.toUpperCase("JS");                     
+    } <!--toLowerCase-->
+</script>
+
+<!--Part15-->
+<p id="result15"></p>
+<script>
+    printScreen15();
+    function printScreen15() {
+        var text="Javascript Angular JS,";
+        var text2="React JS, Vue JS, Node JS";
+        document.getElementById(`result15`).innerHTML="Concat: " + text.concat(" ", text2);                     
+    }
+</script>
+
+<!--Part16-->
+<p id="result16"></p>
+<script>
+    printScreen16();
+    function printScreen16() {
+        var text="Javascript Angular JS, React JS, Vue JS, Node JS";
+        document.getElementById(`result16`).innerHTML="charAt: " + text.charAt(5);                     
+    } 
+</script>
+
+<!--Part17-->
+<p id="result17"></p>
+<script>
+    printScreen17();
+    function printScreen17() {
+        var text="Javascript Angular JS, React JS, Vue JS, Node JS";
+        document.getElementById(`result17`).innerHTML="charCode: " + text.charCodeAt(5);                     
+    } 
+</script>
+
+<!--Part18-->
+<p id="result18"></p>
+<script>
+    printScreen18();
+    function printScreen18() {
+        var text="Javascript Angular JS, React JS, Vue JS, Node JS";
+        var arrayList=text.split(",");
+        document.getElementById(`result18`).innerHTML="Split: " + arrayList[0];                     
+    } 
+</script>
+
+    </body>
+</html>
